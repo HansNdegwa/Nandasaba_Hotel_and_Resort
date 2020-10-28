@@ -59,7 +59,7 @@ if(isset($_GET['q']))
     <div class="container">
 
 
-        <img class="img-responsive" src="images/NandasabaLogo.jpg" style="width:100%; height:180px;">
+        <img class="img-responsive" src="images/NandasabaLogo.png" style="width:100%; height:180px;">
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <ul class="nav navbar-nav">
