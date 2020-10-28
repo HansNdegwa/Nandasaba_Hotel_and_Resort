@@ -61,7 +61,7 @@ if(isset($_REQUEST[ 'submit']))
     <div class="container">
       
       
-       <img class="img-responsive" src="images/home_banner.jpg" style="width:100%; height:180px;">      
+       <img class="img-responsive" src="images/NandasabaLogo.png" style="width:100%; height:180px;">      
         
 
       <div class="well">
