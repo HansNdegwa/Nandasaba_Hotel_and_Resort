@@ -1,5 +1,5 @@
 body {
-    background-image: url('../../images/home_bg.jpg');
+    background-image: url('../../images/home.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -12,8 +12,8 @@ h2 {
 #click_here {
     margin-top: 10px;
     text-align: center;
-    
 }
+
 
 /*
 .well {
@@ -23,24 +23,19 @@ h2 {
 }
 */
 
-.container
-{
+.container {
     width: 60%;
     margin-top: 10px;
 }
 
-label
-{
-    color:#ffbb2b;
+label {
+    color: #ffbb2b;
     font-size: 13px;
     font-weight: 100;
 }
 
-.button
-{
-    
+.button {
     width: 100px;
     float: right;
     font-size: 13px;
-    
 }
