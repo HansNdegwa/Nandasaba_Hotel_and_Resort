@@ -102,13 +102,19 @@
         <div class="row" style="color: #ffbb2b">
             <div class="col-md-4 wellfix">
               <h4><strong>Contact Us</strong></h4><hr>
-              Address : Raipur Chhattisgarh<br>
-              Mail : projectworldsoffcial@gmail.com <br>
+                Hans Ndegwa 1028005 <br>
+                Benard Makori 1027641 <br>
+                Brian Gacheru 1039599 <br>
+                Bridgit Munyao 1023308 <br>
+              
             </div>
             <div class="col-md-4"></div>
             <div class="col-md-4 wellfix">
                 <h4><strong>Developed By</strong></h4><hr>
-                <a href="#">@Projectworlds.in</a>
+                <a href="#">Hans Ndegwa 1028005 <br>
+                Benard Makori 1027641 <br>
+                Brian Gacheru 1039599 <br>
+                Bridgit Munyao 1023308 <br></a>
 
             </div>
         </div>
