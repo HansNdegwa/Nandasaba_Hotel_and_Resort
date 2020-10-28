@@ -79,12 +79,11 @@
      
         <div class="jumbotron">
         <div class="w3-content w3-section">
-            <img class="mySlides w3-animate-fading" src="images/home_gallary/1.jpg" style="width:100%; height:450px;">
-            <img class="mySlides w3-animate-fading" src="images/home_gallary/2.jpg" style="width:100%; height:450px;">
-            <img class="mySlides w3-animate-fading" src="images/home_gallary/3.jpg" style="width:100%; height:450px;">
-            <img class="mySlides w3-animate-fading" src="images/home_gallary/4.jpg" style="width:100%; height:450px;">
-            <img class="mySlides w3-animate-fading" src="images/home_gallary/5.jpg" style="width:100%; height:450px;">
-            <img class="mySlides w3-animate-fading" src="images/home_gallary/6.jpg" style="width:100%; height:450px;">
+          <img class="mySlides w3-animate-fading" src="images/home_gallery/banner1.jpg" style="width:100%; height:450px;">
+          <img class="mySlides w3-animate-fading" src="images/home_gallery/banner2.jpg" style="width:100%; height:450px;">
+          <img class="mySlides w3-animate-fading" src="images/home_gallery/banner3.jpg" style="width:100%; height:450px;">
+          <img class="mySlides w3-animate-fading" src="images/home_gallery/banner4.jpg" style="width:100%; height:450px;">
+          <img class="mySlides w3-animate-fading" src="images/home_gallery/banner5.jpg" style="width:100%; height:450px;">
         </div>    
         </div>
         <hr>
@@ -105,7 +104,7 @@
                 Hans Ndegwa 1028005 <br>
                 Benard Makori 1027641 <br>
                 Brian Gacheru 1039599 <br>
-                Bridgit Munyao 1023308 <br>
+                Bridgit Munyao 1023308 <br><br><br>
               
             </div>
             <div class="col-md-4"></div>
@@ -114,7 +113,7 @@
                 <a href="#">Hans Ndegwa 1028005 <br>
                 Benard Makori 1027641 <br>
                 Brian Gacheru 1039599 <br>
-                Bridgit Munyao 1023308 <br></a>
+                Bridgit Munyao 1023308 <br><br><br></a>
 
             </div>
         </div>
