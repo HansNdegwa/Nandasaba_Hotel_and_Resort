@@ -96,7 +96,7 @@
               <br>
               <p>There's a chic restaurant, a casual eatery with a terrace, and a high-end wine bar. A sophisticated lounge offers high tea. Other amenities include a heated outdoor pool, a fitness center and a spa. Meeting and event space is available, including a ballroom. Breakfast is offered.</p>
               <br>
-              <p>Check-in time: 14:00 <br> Check-out time: 10:00</p>
+              <p>Check-in time: 14:00 pm <br> Check-out time: 10:00 am</p>
             </div>  
         </div>
         <div class="row" style="color: #ffbb2b">
