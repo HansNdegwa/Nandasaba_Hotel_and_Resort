@@ -63,19 +63,19 @@ if(isset($_REQUEST[ 'submit']))
             <form action="" method="post" name="reg">
                 <div class="form-group">
                     <label for="fullname">Full Name:</label>
-                    <input type="text" class="form-control" name="fullname" placeholder="example: Jhon Wiki" required>
+                    <input type="text" class="form-control" name="fullname" placeholder="example: Chris Nandasaba" required>
                 </div>
                 <div class="form-group">
                     <label for="uname">User Name:</label>
-                    <input type="text" class="form-control" name="uname" placeholder="exmple: witchbug" required>
+                    <input type="text" class="form-control" name="uname" placeholder="exmple: CNandasaba" required>
                 </div>
                 <div class="form-group">
                     <label for="uemail">Email:</label>
-                    <input type="email" class="form-control" name="uemail" placeholder="example: jhon@gmail.com" required>
+                    <input type="email" class="form-control" name="uemail" placeholder="example: CNandasaba@cuea.edu" required>
                 </div>
                 <div class="form-group">
                     <label for="upass">Password</label>
-                    <input type="text" class="form-control" name="upass" placeholder="abc123" required>
+                    <input type="text" class="form-control" name="upass" placeholder="cuea@123" required>
                 </div>
                 <button type="submit" class="btn btn-lg btn-primary button" name="submit" value="Add Manager" onclick="return(submitreg());">Submit</button>
 
