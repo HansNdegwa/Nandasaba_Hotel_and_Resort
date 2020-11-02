@@ -21,7 +21,7 @@
         }
 		body
 		{
-			background-image: url('images/home_bg.jpg');
+			background-image: url('images/home.jpg');
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 		}
@@ -34,7 +34,7 @@
     <div class="container">
       
       
-       <img class="img-responsive" src="images/home_banner.jpg" style="width:100%; height:180px;">      
+       <img class="img-responsive" src="images/NandasabaLogo.png" style="width:100%; height:180px;">      
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <ul class="nav navbar-nav">
