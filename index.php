@@ -90,12 +90,13 @@
         <div class="row" style="color: #ed9e21">
             <div class="col-md-12 well" >
               <h4><strong style="color: #ffbb2b">About</strong></h4><br>
-              <p>Online hotel reservations are a popular method for booking hotel rooms. Travelers can book rooms on a computer by using online security to protect their privacy and financial information and by using several online travel agents to compare prices and facilities at different hotels</p>
+              <p>Built in 1904, Nandasaba Hotel & Resort is a 10-minute walk from the National Museums of Kenya and 3 km from Uhuru Park.</p>
               <br>
-              <p>Prior to the Internet, travelers could write, telephone the hotel directly, or use a travel agent to make a reservation. Nowadays, online travel agents have pictures of hotels and rooms, information on prices and deals, and even information on local resorts. Many also allow reviews of the traveler to be recorded with the online travel agent.</p>
+              <p>The elegant rooms and suites come with flat-screen TVs, Wi-Fi, and tea and coffeemakers, along with safes. Some feature verandas. Suites add living rooms, and some have private terraces.</p>
               <br>
-              <p>Online hotel reservations are also helpful for making last minute travel arrangements. Hotels may drop the price of a room if some rooms are still available. There are several websites that specialize in searches for deals on rooms.</p>
-              
+              <p>There's a chic restaurant, a casual eatery with a terrace, and a high-end wine bar. A sophisticated lounge offers high tea. Other amenities include a heated outdoor pool, a fitness center and a spa. Meeting and event space is available, including a ballroom. Breakfast is offered.</p>
+              <br>
+              <p>Check-in time: 14:00 <br> Check-out time: 10:00</p>
             </div>  
         </div>
         <div class="row" style="color: #ffbb2b">
