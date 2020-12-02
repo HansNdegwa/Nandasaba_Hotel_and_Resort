@@ -73,7 +73,7 @@ $user=new User();
                                 <h4>".$row['roomname']."</h4><hr>
                                 <h6>No of Beds: ".$row['no_bed']." ".$row['bedtype']." bed.</h6>
                                 <h6>Facilities: ".$row['facility']."</h6>
-                                <h6>Price: ".$row['price']." tk/night.</h6>
+                                <h6>Price: ".$row['price']." kshs per night.</h6>
                             </div>
                             &nbsp;&nbsp;
                             <a href='admin/edit_room_cat.php?roomname=".$row['roomname']."'><button class='btn btn-primary button'>Edit</button></a>
