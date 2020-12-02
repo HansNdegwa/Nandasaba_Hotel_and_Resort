@@ -1,5 +1,8 @@
 <?php session_start();
+//to embed the class.user.php file to  link the database
 include_once 'admin/include/class.user.php';
+
+//to log into the admin page
 $user=new User();
 $uid=$_SESSION[ 'uid']; 
 if(!$user->get_session()) 
@@ -15,51 +18,21 @@ if(isset($_GET['q']))
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Admin Panel</title>
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-
-    <style>
-        .well {
-            background: rgba(0, 0, 0, 0.7);
-            border: none;
-            height: 200px;
-        }
-        
-        body {
-            background-image: url('images/home.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-        
-        h4 {
-            color: #ffbb2b;
-        }
-        
-        ul {
-            color: white;
-            font-size: 13px;
-        }
-    </style>
-
-
+    <!-- css style sheet -->
+    <link rel="stylesheet" href="admin.css" type="text/css">
 </head>
 
 <body>
     <div class="container">
 
+        <!-- website banner image -->
+        <img class="img-responsive" src="images/banner.jpg" style="width:100%; height:180px;">
 
-        <img class="img-responsive" src="images/NandasabaLogo.png" style="width:100%; height:180px;">
+        <!-- navigation bar -->
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <ul class="nav navbar-nav">
@@ -70,6 +43,7 @@ if(isset($_GET['q']))
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
+                    <!-- logout button -->
                         <a href="admin.php?q=logout">
                             <button type="button" class="btn btn-danger">Logout</button>
                         </a>
@@ -77,39 +51,43 @@ if(isset($_GET['q']))
                 </ul>
             </div>
         </nav>
-
+        
+        <!-- admin privileges -->
         <div class="row">
-           <div class="col-md-3"></div>
-            <div class="col-md-6 well">
+           <div class="column1"></div>
+            <div class="column2 well">
+            <!-- Room category -->
                 <h4>Room Category</h4>
                 <hr>
                 <ul>
-                    <li><a href="admin/addroom.php">Add Room Category</a></li>
-                    <li><a href="show_room_cat.php">Show All Room Category</a></li>
+                    <li><a href="admin/addroom.php">Add Room Category</a></li><br>
+                    <li><a href="show_room_cat.php">Show All Room Category</a></li><br>
                     <li><a href="show_room_cat.php">Edit Room Category</a></li>
                 </ul>
             </div>
-            <div class="col-md-3"></div>
+            <div class="column1"></div>
         </div>
 
         <div class="row">
-           <div class="col-md-3"></div>
-            <div class="col-md-6 well">
+           <div class="column1"></div>
+            <div class="column2 well">
+            <!-- Bookings -->
                 <h4>Bookings</h4>
                 <hr>
                 <ul>
-                    <li><a href="room.php">Book Now</a></li>
-                    <li><a href="show_all_room.php">Show All Booked Rooms</a></li>
+                    <li><a href="room.php">Book Now</a></li><br>
+                    <li><a href="show_all_room.php">Show All Booked Rooms</a></li><br>
                     <li><a href="show_all_room.php">Edit Booked Room</a></li>
                 </ul>
             </div>
-           <div class="col-md-3"></div>
+           <div class="column1"></div>
         </div>
         
         
         <div class="row">
-           <div class="col-md-3"></div>
-            <div class="col-md-6 well">
+           <div class="column1"></div>
+            <div class="column2 well">
+            <!-- adding more admin users  -->
                 <h4>Add Manager</h4>
                 <hr>
                 <ul>
@@ -117,7 +95,7 @@ if(isset($_GET['q']))
  
                 </ul>
             </div>
-            <div class="col-md-3"></div>
+            <div class="column1"></div>
         </div>
 
 
@@ -129,6 +107,23 @@ if(isset($_GET['q']))
 
 
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

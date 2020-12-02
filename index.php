@@ -1,52 +1,18 @@
 <!DOCTYPE html>
 <head>
     <title>Hotel Booking</title>
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    
-    <style>
-        .well
-        {
-            background: rgba(0,0,0,0.7);
-            border: none;
-    
-        }
-        .wellfix
-        {
-            background: rgba(0,0,0,0.7);
-            border: none;
-            height: 150px;
-        }
-		body
-		{
-			background-image: url('images/home.jpg');
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-		}
-		p
-		{
-			font-size: 13px;
-		}
-        .pro_pic
-        {
-            border-radius: 50%;
-            height: 50px;
-            width: 50px;
-            margin-bottom: 15px;
-            margin-right: 15px;
-        }
-		
-    </style>
-    
-    
+    <!-- css file -->
+    <link rel="stylesheet" href="indexstyle.css" type="text/css">
+      
 </head>
 
 <body>
     <div class="container">
       
-      
-       <img class="img-responsive" src="images/NandasabaLogo.png" style="width:100%; height:180px;">      
+      <!-- website header -->
+       <img class="img-responsive" src="images/banner.jpg" style="width:100%; height:180px;"> 
+
+       <!-- Navigation bar -->     
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <ul class="nav navbar-nav">
@@ -55,6 +21,8 @@
                     <li><a href="reservation.php">Online Reservation</a></li>
                     <li><a href="admin.php">Admin</a></li>
                 </ul>
+
+                <!-- hyperlinks -->
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="http://www.facebook.com"><img src="images/facebook.png"></a></li>
                     <li><a href="http://www.twitter.com"><img src="images/twitter.png"></a></li>                    
@@ -62,7 +30,7 @@
             </div>
         </nav>
 
-     
+     <!-- jumbotron with sliding images -->
         <div class="jumbotron">
         <div class="w3-content w3-section">
           <img class="mySlides w3-animate-fading" src="images/home_gallery/banner1.jpg" style="width:100%; height:450px;">
@@ -73,10 +41,12 @@
         </div>    
         </div>
         <hr>
+
+        <!-- About section -->
         <div class="row" style="color: #ed9e21">
-            <div class="col-md-12 well" >
+            <div class="column1 well" >
               <h4><strong style="color: #ffbb2b">About</strong></h4><br>
-              <p>Built in 1904, Nandasaba Hotel & Resort is a 10-minute walk from the National Museums of Kenya and 3 km from Uhuru Park.</p>
+              <p>Built in 1904, WebDev Hotel & Resort is a 10-minute walk from the National Museums of Kenya and 3 km from Uhuru Park.</p>
               <br>
               <p>The elegant rooms and suites come with flat-screen TVs, Wi-Fi, and tea and coffeemakers, along with safes. Some feature verandas. Suites add living rooms, and some have private terraces.</p>
               <br>
@@ -85,8 +55,10 @@
               <p>Check-in time: 14:00 pm <br> Check-out time: 10:00 am</p>
             </div>  
         </div>
+
+        <!-- Contact section -->
         <div class="row" style="color: #ffbb2b">
-            <div class="col-md-4 wellfix">
+            <div class="column2 wellfix">
               <h4><strong>Contact Us</strong></h4><hr>
                 Hans Ndegwa 1028005 <br>
                 Benard Makori 1027641 <br>
@@ -94,8 +66,10 @@
                 Bridgit Munyao 1023308 <br><br><br>
               
             </div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4 wellfix">
+
+            <!-- Developers section -->
+            <div class="column2"></div>
+            <div class="column2 wellfix">
                 <h4><strong>Developed By</strong></h4><hr>
                 <a href="#">Hans Ndegwa 1028005 <br>
                 Benard Makori 1027641 <br>
@@ -114,6 +88,20 @@
     
     
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

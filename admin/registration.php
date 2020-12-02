@@ -1,27 +1,31 @@
 <?php
+
+//To embed the class.user.php file to link the database
 include_once 'include/class.user.php'; 
+
+//to create a new user
 $user=new User(); 
+
+//when submit button is clicked
 if(isset($_REQUEST[ 'submit'])) 
 { 
     extract($_REQUEST); 
+    //variables to be extracted
     $register=$user->reg_user($fullname, $uname, $upass, $uemail); 
+    
+    //validation statement
     if($register) 
     { 
         echo "
-<script type='text/javascript'>
-    alert('Your Manager has been Added Successfully');
-</script>"; 
+<script type='text/javascript'> alert('Your Manager has been Added Successfully'); </script>"; 
         echo "
-<script type='text/javascript'>
-    window.location.href = '../admin.php';
-</script>"; 
+<script type='text/javascript'> window.location.href = '../admin.php'; </script>"; 
     } 
+    //when error occurs
     else 
     {
         echo "
-<script type='text/javascript'>
-    alert('Registration failed! username or email already exists');
-</script>";
+<script type='text/javascript'> alert('Registration failed! username or email already exists'); </script>";
     }
 } 
 ?>
@@ -31,11 +35,12 @@ if(isset($_REQUEST[ 'submit']))
 
 <head>
     <title>Admin Panel</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Stylesheet css -->
     <link rel="stylesheet" href="css/reg.css" type="text/css">
+
     <script language="javascript" type="text/javascript">
+        
+        //Function to prompt user input
         function submitreg() {
             var form = document.reg;
             if (form.name.value == "") {
@@ -58,20 +63,22 @@ if(isset($_REQUEST[ 'submit']))
 <body>
     <div class="container">
         <div class="well">
+
+        <!-- Input form -->
             <h2>Add Your Manager</h2>
             <hr>
             <form action="" method="post" name="reg">
                 <div class="form-group">
                     <label for="fullname">Full Name:</label>
-                    <input type="text" class="form-control" name="fullname" placeholder="example: Chris Nandasaba" required>
+                    <input type="text" class="form-control" name="fullname" placeholder="example: Hans Ndegwa" required>
                 </div>
                 <div class="form-group">
                     <label for="uname">User Name:</label>
-                    <input type="text" class="form-control" name="uname" placeholder="exmple: CNandasaba" required>
+                    <input type="text" class="form-control" name="uname" placeholder="exmple: HNdegwa" required>
                 </div>
                 <div class="form-group">
                     <label for="uemail">Email:</label>
-                    <input type="email" class="form-control" name="uemail" placeholder="example: CNandasaba@cuea.edu" required>
+                    <input type="email" class="form-control" name="uemail" placeholder="example: hansndegwa@cuea.edu" required>
                 </div>
                 <div class="form-group">
                     <label for="upass">Password</label>

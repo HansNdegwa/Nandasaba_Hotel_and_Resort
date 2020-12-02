@@ -1,4 +1,6 @@
 <?php
+ 
+    //To embed the class.user.php file
     include_once 'admin/include/class.user.php'; 
     $user=new User(); 
 
@@ -27,18 +29,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
     <title>Hotel Booking</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- link to css file -->
   <link rel="stylesheet" href="admin/css/reg.css" type="text/css">
   
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
+
+  <!-- datepicker script -->
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
@@ -55,10 +54,10 @@
 <body>
     <div class="container">
       
-      
-       <img class="img-responsive" src="images/home_banner.jpg" style="width:100%; height:180px;">      
+      <!-- header image -->
+       <img class="img-responsive" src="images/banner.jpg" style="width:100%; height:180px;">      
         
-
+<!-- form -->
       <div class="well">
             <h2>Book Now: <?php echo $roomname; ?></h2>
             <hr>
@@ -77,11 +76,11 @@
                 </div>
                 <div class="form-group">
                     <label for="name">Enter Your Full Name:</label>
-                    <input type="text" class="form-control" name="name" placeholder="Jhon Wicky" required>
+                    <input type="text" class="form-control" name="name" placeholder="Hans Ndegwa" required>
                 </div>
                 <div class="form-group">
                     <label for="phone">Enter Your Phone Number:</label>
-                    <input type="text" class="form-control" name="phone" placeholder="018XXXXXXX" required>
+                    <input type="text" class="form-control" name="phone" placeholder="0721XXXXXX" required>
                 </div>
                  
                

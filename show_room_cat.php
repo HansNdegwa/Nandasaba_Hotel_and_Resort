@@ -1,4 +1,6 @@
 <?php
+
+//Embed class.user.php file
 include_once 'admin/include/class.user.php'; 
 $user=new User();
 
@@ -11,52 +13,21 @@ $user=new User();
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  
     <title>Hotel Booking</title>
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <!-- css file -->
+    <link rel="stylesheet" href="showroom.css" type="text/css">
     
-    
-    <style>
-          
-        .well {
-            background: rgba(0, 0, 0, 0.7);
-            border: none;
-            height: 200px;
-        }
-        
-        body {
-            background-image: url('images/home.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-        
-        h4 {
-            color: #ffbb2b;
-        }
-        h6
-        {
-            color: navajowhite;
-            font-family:  monospace;
-        }
-
-
-    </style>
-    
+   
     
 </head>
 
 <body>
     <div class="container">
       
-      
-       <img class="img-responsive" src="images/NandasabaLogo.png" style="width:100%; height:180px;">      
+      <!-- website header image -->
+       <img class="img-responsive" src="images/banner.jpg" style="width:100%; height:180px;">      
+       <!-- Navigation bar -->
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <ul class="nav navbar-nav">
@@ -72,6 +43,7 @@ $user=new User();
                         </a>
                     </li>
                 </ul>
+                <!-- hyperlinks -->
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="http://www.facebook.com"><img src="images/facebook.png"></a></li>
                     <li><a href="http://www.twitter.com"><img src="images/twitter.png"></a></li>                    
@@ -83,16 +55,17 @@ $user=new User();
         
         <?php
         
+        //select query to display rooms
         $sql="SELECT * FROM room_category";
         $result = mysqli_query($user->db, $sql);
         if($result)
         {
             if(mysqli_num_rows($result) > 0)
             {
-//               ********************************************** Show Room Category***********************
+                //Show Room Category
                 while($row = mysqli_fetch_array($result))
                 {
-                    
+                    //Output
                     echo "
                             <div class='row'>
                             <div class='col-md-2'></div>

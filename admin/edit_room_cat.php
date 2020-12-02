@@ -1,16 +1,20 @@
 <?php
+//embed class.user.php file to link database
 include_once 'include/class.user.php'; 
 $user=new User(); 
 
 $room_cat=$_GET['roomname'];
 
+//select query to display calues in room_category table
 $sql="SELECT * FROM room_category WHERE roomname='$room_cat'";
 $query=mysqli_query($user->db, $sql);
 $row = mysqli_fetch_array($query);
  
 
+//if submit button is clicked
 if(isset($_REQUEST[ 'submit'])) 
 { 
+    //saved room details are extracted and displayed
     extract($_REQUEST); 
     $result=$user->edit_room_cat($roomname, $room_qnty, $no_bed, $bedtype,$facility,$price,$room_cat);
     if($result)
@@ -29,9 +33,7 @@ if(isset($_REQUEST[ 'submit']))
 
 <head>
     <title>Admin Panel</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- stylesheet -->
     <link rel="stylesheet" href="css/reg.css" type="text/css">
     
 </head>
@@ -39,13 +41,19 @@ if(isset($_REQUEST[ 'submit']))
 <body>
     <div class="container">
         <div class="well">
+
+        <!-- Adding a room category -->
             <h2>Add Room Category</h2>
             <hr>
+
+            <!-- room name -->
             <form action="" method="post" name="room_category">
                 <div class="form-group">
                     <label for="roomname">Room Type Name:</label>
                     <input type="text" class="form-control" name="roomname" value="<?php echo $row['roomname'] ?>" required>
                 </div>
+
+                <!-- number of rooms -->
                  <div class="form-group">
                     <label for="qty">No of Rooms:</label>&nbsp;
                     <select name="room_qnty">
@@ -62,6 +70,8 @@ if(isset($_REQUEST[ 'submit']))
                       <option value="10">10</option>
                     </select>
                 </div>
+
+                <!-- number of beds in the room -->
                 <div class="form-group">
                     <label for="bed">No of Bed:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <select name="no_bed">
@@ -70,6 +80,8 @@ if(isset($_REQUEST[ 'submit']))
                       <option value="2">2</option>
                     </select>
                 </div>
+
+                <!-- the type of beds -->
                 <div class="form-group">
                     <label for="bedtype">Bed Type:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                    <select name="bedtype">
@@ -78,10 +90,14 @@ if(isset($_REQUEST[ 'submit']))
                       <option value="double">double</option>
                     </select>
                 </div>
+
+                <!-- facilities available in the room -->
                 <div class="form-group">
                     <label for="Facility">Facility</label>
                     <textarea class="form-control" rows="5" name="facility"><?php echo $row['facility'] ?></textarea>
                 </div>
+
+                <!-- price of the room -->
                <div class="form-group">
                     <label for="price">Price Per Night:</label>
                     <input type="text" class="form-control" name="price" value="<?php echo $row['price'] ?>" required>
@@ -89,6 +105,7 @@ if(isset($_REQUEST[ 'submit']))
                 <button type="submit" class="btn btn-lg btn-primary button" name="submit">Update</button>
 
                <br>
+               <!-- to return back to the admin panel -->
                 <div id="click_here">
                     <a href="../admin.php">Back to Admin Panel</a>
                 </div>

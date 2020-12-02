@@ -1,15 +1,18 @@
-<?php session_start(); include_once 'include/class.user.php'; $user=new User(); ?>
+<?php session_start(); 
+//To embed class.user.php file to link database
+include_once 'include/class.user.php'; 
+$user=new User(); 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <title>Admin Panel</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+   <!-- css stylesheet -->
     <link rel="stylesheet" href="css/login.css" type="text/css">
 
+    <!-- Validation rule incase of no input -->
     <script language="javascript" type="text/javascript">
         function submitlogin() {
             var form = document.login;
@@ -29,6 +32,7 @@
         <div class="jumbotron">
             <h2>Log In</h2>
             
+            <!-- Login form -->
             <hr>
             <form action="" method="post" name="login">
                 <div class="form-group">
@@ -36,20 +40,19 @@
                     <input type="text" name="emailusername" class="form-control" value="admin" required>
                 </div>
                 <div class="form-group">
-                    <label for="password">Password:</label>
+                    <label for="password">Password:</label><br>
                     <input type="password" name="password" class="form-control" value="1234" required>
                 </div>
-                <!--For showing error for wrong input  -->
+                
+                
+                <!--For showing error incase of wrong input  -->
                 <p id="wrong_id" style=" color:red; font-size:12px; "></p>
-
-
                 <button type="submit" name="submit" value="Login" onclick="retrun(submitlogin());" class="btn btn-lg btn-primary btn-block">Submit</button>
                 
                 <br>
                 <p style="text-align: center; font-size: 14px;"><a href="../index.php">Back To Home</a></p>
                 
-                
-
+                <!-- validation rule -->
                 <?php if(isset($_REQUEST[ 'submit'])) { extract($_REQUEST); $login=$user->check_login($emailusername, $password); 
                     if($login) { echo "<script>location='../admin.php'</script>"; } 
                 else{?>
