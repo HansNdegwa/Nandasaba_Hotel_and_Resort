@@ -64,7 +64,7 @@ if(isset($_REQUEST[ 'submit']))
     <div class="container">
         <div class="well">
 
-        <!-- Input form -->
+        <!-- Input form to add user -->
             <h2>Add Your Manager</h2>
             <hr>
             <form action="" method="post" name="reg">
